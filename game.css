@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    height: 100vh;
+    
+}
+
+.wholegame {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0px 26px 60px black;
+    overflow: hidden;
+}
+
+
+.player {
+    width: 50%;
+    float: left;
+    height: 580px;
+    padding: 90px;
+}
+
+.playerName {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 140;
+}
+
+.playerActive {
+    background-color: rgb(221, 219, 219);
+}
+
+.playerScore {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 350;
+    color: rgb(234, 77, 77);
+    margin-bottom: 160px;
+}
+
+.playerCurrentBox {
+    text-align: center;
+    background-color: rgb(234, 77, 77);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.playerCurrentLabel {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.playerCurrentScore {
+    font-size: 45px;
+    color: white;
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    font-weight: 700;
+}
+
+button:hover i { 
+    margin-right: 10px;
+}
+
+
+
+.dice {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 200px;
+    box-shadow: 0px 10px 60px black;
+}
+
+.btn-new {
+    top: 24px;
+} 
+
+.btn-roll {
+    top: 430px;
+}
+.btn-hold {
+    top: 500px;
+}
+
+i {
+    color: rgb(234, 77, 77);
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+.playerWinner {
+    background-color: rgb(166, 165, 165);
+}
+
+.playerWinner .playerName {
+    font-weight: 350;
+}
+
+
+.hidden {
+    display: none;
+}
